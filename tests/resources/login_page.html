@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sample Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        .card { max-width: 360px; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; }
+        label { display: block; margin-bottom: 0.25rem; font-weight: 600; }
+        input { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
+        button { width: 100%; padding: 0.75rem; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; }
+        .row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Учебная форма входа</h2>
+        <form>
+            <label for="username">Email</label>
+            <input id="username" name="username" type="email" placeholder="student@example.com" required />
+
+            <label for="password">Пароль</label>
+            <input id="password" name="password" type="password" placeholder="Введите пароль" required />
+
+            <div class="row">
+                <input id="remember" name="remember" type="checkbox" />
+                <label for="remember" style="margin: 0;">Запомнить меня</label>
+            </div>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</body>
+</html>
